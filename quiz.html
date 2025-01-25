@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Style Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="carousel.html">Carousel</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="joke.html">Joke</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="quiz">
+    <h2><b>Jewelry Style Quiz</h2>
+    <p>Find out your ideal jewelry style!</p>
+    <form id="quiz-form">
+      <label>What's your favorite metal? <br>
+        <select id="question1">
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="platinum">Platinum</option>
+        </select>
+      </label><br><br>
+      <label>What's your go-to style? <br>
+        <select id="question2">
+          <option value="classic">Classic</option>
+          <option value="modern">Modern</option>
+          <option value="boho">Boho</option>
+        </select>
+      </label><br><br>
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <p id="quiz-result"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

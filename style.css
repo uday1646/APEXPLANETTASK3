@@ -1,0 +1,139 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('j11.jpg') no-repeat center center fixed;
+    background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: url('j11.jpg') no-repeat center center fixed;
+    background-size: cover;
+  
+  color: #0b0909;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #0e0505;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  color: #ffd1a1;
+}
+
+section {
+  padding: 20px;
+  
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  font-style:normal;
+  font-size: large;
+  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.3);
+
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-image {
+  display: none;
+  width: 100%; 
+  height: 500px; 
+  border-radius: 8px;
+  object-fit: cover; 
+}
+
+.carousel-image.active {
+  display: block; 
+}
+
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+#prev:hover,
+#next:hover {
+  background: #555;
+}
+
+#prev:focus,
+#next:focus {
+  outline: 2px solid #ffd1a1;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  #prev,
+  #next {
+    padding: 8px 12px;
+  }
+}
